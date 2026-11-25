@@ -1,0 +1,33 @@
+# Konfiguration für today-cli
+# Speicherort: ~/.config/today/config.toml
+
+# Dein Name für die Begrüßung (leer lassen für eine neutrale Begrüßung)
+name = ""
+
+[display]
+icons = true      # Emoji-Symbole anzeigen
+width = 72        # maximale Breite der Ausgabe
+
+[weather]
+enabled = true
+# Koordinaten deines Orts, z. B. von https://www.latlong.net
+latitude = 48.21
+longitude = 16.37
+place = "Wien"
+
+[calendar]
+enabled = false
+# .ics-Dateien oder https-Links (z. B. die geheime iCal-Adresse aus Google Kalender)
+sources = []
+show_tomorrow = true
+
+[github]
+enabled = true
+# Token kommt aus `gh auth token` oder der Umgebungsvariable GITHUB_TOKEN
+max_items = 5
+
+[tasks]
+enabled = false
+# Markdown-Dateien mit Aufgaben im Format "- [ ] Aufgabe 📅 2026-12-01"
+files = []
+max_items = 8

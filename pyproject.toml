@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "today-cli"
+version = "0.1.0"
+description = "Dein Tagesüberblick im Terminal: Wetter, Termine, GitHub und Aufgaben."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.11"
+authors = [{ name = "Matthi1009" }]
+keywords = ["cli", "terminal", "dashboard", "productivity"]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Matthi1009/today-cli"
+
+[project.scripts]
+today = "today_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
